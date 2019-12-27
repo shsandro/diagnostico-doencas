@@ -1,0 +1,7 @@
+'1. Você se sente nervoso ou ansioso?'.
+'2. Você sente que não consegue parar ou controlar seus medos?'.
+'3. Você sente muito medo sobre coisas diferentes?'.
+'4. Você tem tido problemas para relaxar?'.
+'5. Você se sente tão inquieto que é difícil ficar parado?'.
+'6. Você fica facilmente incomodado ou irritado?'.
+'7. Você sente medo, como se algo terrível pudesse acontecer?'.
