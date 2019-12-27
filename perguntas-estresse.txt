@@ -1,0 +1,10 @@
+'1. No último mês, com que frequência você se sentiu chateado(a) por algo que aconteceu inesperadamente?'.
+'2. No último mês, com que frequência você não esteve sob o controle de coisas importantes para sua vida?'.
+'3. No último mês, com que frequência você se sentiu nervoso ou estressado?'.
+'4. No último mês, com que frequência você não se sentiu confiante sobre sua habilidade de lidar com seus problemas pessoais?'.
+'5. No último mês, com que frequência você sentiu que as coisas não estavam ocorrendo da forma que gostaria?'.
+'6. No último mês, com que frequência você descobriu que não podia lidar com todas as coisas que precisava fazer?'.
+'7. No último mês, com que freqüência você não conseguiu controlar as irritações da sua vida?'.
+'8. No último mês, quantas vezes você sentiu que estava abaixo do que deveria ser das coisas?'.
+'9. No último mês, com que frequência você se irritou por causa de coisas que aconteceram fora do seu controle?'.
+'10. No último mês, quantas vezes você sentiu dificuldades se acumulando tanto que não conseguiu superá-las?'.
