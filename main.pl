@@ -12,6 +12,13 @@ teste(2) :-
             getLines(L, 'respostas.txt'),
             depressao(L, SCORE).
 
+teste(3) :-
+            consult('ansiedade'),
+            consult('base-dados-ansiedade'),
+            perguntas(),
+            getLines(L, 'respostas.txt'),
+            ansiedade(L, SCORE).
+
 questionario() :-
             writeln('Qual teste deseja realizar?'),
             writeln('1 - Estresse          2 - Depressão          3 - Ansiedade'),
