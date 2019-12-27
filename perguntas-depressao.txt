@@ -1,0 +1,9 @@
+'1. Você possui baixo interesse ou prazer em fazer coisas?'.
+'2. Você se sente para baixo, depressivo ou sem esperança?'.
+'3. Você tem tido problemas para adormecer ou dormido demais?'.
+'4. Você tem se sentido cansado ou com baixa energia?'.
+'5. Você tem tido baixo apetite ou comido demais?'.
+'6. Você tem se sentido mal consigo mesmo - ou que falhou consigo mesmo ou com sua família?'.
+'7. Você possui problemas para se concentrar em coisas, como ler jornal ou assistir televisão?'.
+'8. Você se move ou fala tão devagar que outras pessoas conseguem perceber isso?'.
+'9. Você tem pensamentos de que você estaria melhor morto ou de se machucar em algum momento?'.

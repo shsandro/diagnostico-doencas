@@ -11,8 +11,7 @@ score(fairly_often, 3).
 score(very_often, 4).
 
 checkEstresseAlto(SCORE) :- 
-            SCORE >= 27,
-            SCORE =< 40.
+            SCORE >= 27.
 
 checkEstresseModerado(SCORE) :- 
             SCORE >= 14,
@@ -23,29 +22,15 @@ checkEstresseBaixo(SCORE) :-
             SCORE =< 13.
 
 estresse(FREQUENCIA, SCORE) :- 
-            (estresseAlto(FREQUENCIA, SCORE), checkEstresseAlto(SCORE), write("Estresse alto.\n"), !);
-            (estresseModerado(FREQUENCIA, SCORE), checkEstresseModerado(SCORE), write("Estresse moderado.\n"), !);
-            (estresseBaixo(FREQUENCIA, SCORE), checkEstresseBaixo(SCORE), write("Estresse baixo.\n"), !).
+            (calcEstresse(FREQUENCIA, SCORE), checkEstresseAlto(SCORE), write("Estresse alto.\n"), !);
+            (calcEstresse(FREQUENCIA, SCORE), checkEstresseModerado(SCORE), write("Estresse moderado.\n"), !);
+            (calcEstresse(FREQUENCIA, SCORE), checkEstresseBaixo(SCORE), write("Estresse baixo.\n"), !).
 
-estresseAlto([], 0).
+calcEstresse([], 0).
 
-estresseAlto([FREQUENCIA | R], SCORE) :-
+calcEstresse([FREQUENCIA | R], SCORE) :-
             score(FREQUENCIA, SCORE_AUX),
-            estresseAlto(R, SCORE_AUX2),
-            SCORE is SCORE_AUX2 + SCORE_AUX.
-
-estresseModerado([], 0).
-
-estresseModerado([FREQUENCIA|R], SCORE) :-
-            score(FREQUENCIA, SCORE_AUX),
-            estresseModerado(R, SCORE_AUX2),
-            SCORE is SCORE_AUX2 + SCORE_AUX.
-
-estresseBaixo([], 0).
-
-estresseBaixo([FREQUENCIA|R], SCORE) :-
-            score(FREQUENCIA, SCORE_AUX),
-            estresseBaixo(R, SCORE_AUX2),
+            calcEstresse(R, SCORE_AUX2),
             SCORE is SCORE_AUX2 + SCORE_AUX.
 
 :- begin_tests(estresse).
