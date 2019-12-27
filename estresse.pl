@@ -15,7 +15,7 @@ escreveResposta(3, Out) :-
 escreveResposta(4, Out) :- 
             writeln(Out, "'very_often'.").
 
-exibePerguntas([], Out).
+exibePerguntas([], _Out).
 
 exibePerguntas([L | R], Out) :-
             writeln(L),

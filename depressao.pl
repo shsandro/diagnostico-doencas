@@ -12,7 +12,7 @@ escreveResposta(2, Out) :-
 escreveResposta(3, Out) :- 
             writeln(Out, "'nearly_every_day'.").
 
-exibePerguntas([], Out).
+exibePerguntas([], _Out).
 
 exibePerguntas([L | R], Out) :-
             writeln(L),
