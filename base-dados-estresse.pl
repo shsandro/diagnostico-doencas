@@ -22,9 +22,9 @@ checkEstresseBaixo(SCORE) :-
             SCORE =< 13.
 
 estresse(FREQUENCIA, SCORE) :- 
-            (calcEstresse(FREQUENCIA, SCORE), checkEstresseAlto(SCORE), write("Estresse alto.\n"), !);
-            (calcEstresse(FREQUENCIA, SCORE), checkEstresseModerado(SCORE), write("Estresse moderado.\n"), !);
-            (calcEstresse(FREQUENCIA, SCORE), checkEstresseBaixo(SCORE), write("Estresse baixo.\n"), !).
+            (calcEstresse(FREQUENCIA, SCORE), checkEstresseAlto(SCORE), write("\nVocê possui Estresse alto.\nProcure uma ajuda médica!"), !);
+            (calcEstresse(FREQUENCIA, SCORE), checkEstresseModerado(SCORE), write("\nEstresse moderado.\nÉ indicado procurar ajuda médica."), !);
+            (calcEstresse(FREQUENCIA, SCORE), checkEstresseBaixo(SCORE), write("\nEstresse baixo.\nSe preferir, procure ajuda médica."), !).
 
 calcEstresse([], 0).
 

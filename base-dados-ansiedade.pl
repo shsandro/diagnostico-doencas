@@ -25,10 +25,10 @@ checkAnsiedadeSevera(SCORE) :-
             SCORE >= 15.
 
 ansiedade(FREQUENCIA, SCORE) :- 
-            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeSevera(SCORE), write("Ansiedade Severa.\n"), !);
-            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeModerada(SCORE), write("Ansiedadde moderada.\n"), !);
-            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeSuave(SCORE), write("Ansiedadde suave.\n"), !);
-            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeMinima(SCORE), write("Ansiedadde mínima ou inexistente.\n"), !).
+            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeSevera(SCORE), write("\nAnsiedade Severa.\nProcure ajuda médica urgetemente!"), !);
+            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeModerada(SCORE), write("\nAnsiedadde moderada.\nProcure ajuda médica!"), !);
+            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeSuave(SCORE), write("\nAnsiedadde suave.\nÉ recomendado procurar ajuda médica."), !);
+            (calcAnsiedade(FREQUENCIA, SCORE), checkAnsiedadeMinima(SCORE), write("\nAnsiedadde mínima ou inexistente.\nSe preferir, procure ajuda médica."), !).
 
 calcAnsiedade([], 0).
 

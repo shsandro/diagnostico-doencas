@@ -25,10 +25,10 @@ checkDepressaoSevera(SCORE) :-
             SCORE >= 20.
 
 depressao(FREQUENCIA, SCORE) :- 
-            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoSevera(SCORE), write("Depressão Severa.\n"), !);
-            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoModeradamenteSevera(SCORE), write("Depressão moderadamente severa.\n"), !);
-            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoSuaveModerada(SCORE), write("Depressão suave ou moderada.\n"), !);
-            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoMinima(SCORE), write("Depressão mínima ou inexistente.\n"), !).
+            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoSevera(SCORE), write("\nDepressão Severa.\nProcure ajuda médica urgentemente!"), !);
+            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoModeradamenteSevera(SCORE), write("\nDepressão moderadamente severa.\nProcure ajuda médica!"), !);
+            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoSuaveModerada(SCORE), write("\nDepressão suave ou moderada.\nÉ recomendado procurar ajuda médica."), !);
+            (calcDepressao(FREQUENCIA, SCORE), checkDepressaoMinima(SCORE), write("\nDepressão mínima ou inexistente.\nSe preferir, procure ajuda médica."), !).
 
 calcDepressao([], 0).
 
