@@ -25,7 +25,7 @@ exibePerguntas([L | R], Out) :-
 
 perguntas() :-
             writeln('\nPara cada pergunta escolha uma das possíveis alternativas:'),
-            writeln('0 - never        1 - almost never        2 - sometimes          3 - fairly often          4 - very often\n'),
+            writeln('0 - nunca        1 - quase nunca        2 - às vezes          3 - com frequência          4 - com muita frequência\n'),
             writeln('Responda 0, 1, 2, 3 ou 4 para as próximas perguntas.\n'),
             getLines(L, 'perguntas-estresse.txt'),
             open('respostas.txt', write, Out),

@@ -22,7 +22,7 @@ exibePerguntas([L | R], Out) :-
 
 perguntas() :-
             writeln('\nPara cada pergunta escolha uma das possíveis alternativas:'),
-            writeln('0 - not at all        1 - several days        2 - more than half the days          3 - nearly every day\n'),
+            writeln('0 - nunca        1 - alguns dias        2 - mais da metade dos dias          3 - quase todo dia\n'),
             writeln('Responda 0, 1, 2 ou 3 para as próximas perguntas.\n'),
             getLines(L, 'perguntas-depressao.txt'),
             open('respostas.txt', write, Out),
